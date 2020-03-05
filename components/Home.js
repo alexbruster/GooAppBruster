@@ -15,7 +15,7 @@ export default class Home extends React.Component {
   static contextType = NavigationContext;
 
   componentDidMount = async () => {
-    const apiCall = await axios.get(`https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.exhibitions.getObjects&access_token=beb429050631ade0573ebdda534c1c63&exhibition_id=874305559&page=1&per_page=14`)
+    const apiCall = await axios.get(`https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.exhibitions.getObjects&access_token=d800f681fce46f75daea0245e94b8a79&exhibition_id=874305559&page=1&per_page=14`)
     const data = apiCall.data.objects;
 
     this.setState(
